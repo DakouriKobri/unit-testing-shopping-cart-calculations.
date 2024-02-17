@@ -10,8 +10,12 @@ After cloning the repository, cd into the project directory, run [npm](https://d
 
 ## Run Tests
 
-Run the test with the following command
+Run the tests with the following command
 
 ```bash
-  npm run watch
+  npm test
 ```
+
+## Reference & Credit
+
+[Springboard](https://curric.rithmschool.com/springboard/lectures/express-jest-testing/)
