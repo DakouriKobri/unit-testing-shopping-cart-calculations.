@@ -2,9 +2,11 @@ function calculateTotalQuantity(cart) {
   return cart.reduce((sum, item) => sum + item.quantity, 0);
 }
 
-function calculateTotalPrice(cart) {
+function calculateTotalPrice(cart, discount = 1) {
   return Number(
-    cart.reduce((sum, item) => sum + item.quantity * item.price, 0).toFixed(2)
+    cart
+      .reduce((sum, item) => sum + item.quantity * item.price * discount, 0)
+      .toFixed(2)
   );
 }
 
