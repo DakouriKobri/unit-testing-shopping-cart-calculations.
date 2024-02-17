@@ -34,4 +34,9 @@ describe('calculateTotalPrice', () => {
     const totalPrice = calculateTotalPrice(cart, discount);
     expect(totalPrice).toBe(57.44);
   });
+
+  it('handles empty cart', () => {
+    const total = calculateTotalPrice([]);
+    expect(total).toBe(0);
+  });
 });
